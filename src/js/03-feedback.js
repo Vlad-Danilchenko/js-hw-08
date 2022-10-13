@@ -14,7 +14,7 @@ const onFormInput = event => {
   saveData[name] = value;
   save(LOCALE_STORAGE_KEY, saveData);
 };
-const throttledOnFormInput = throttle(onFormInput, 300);
+const throttledOnFormInput = throttle(onFormInput, 500);
 formRef.addEventListener('input', throttledOnFormInput);
 
 function initPages() {
