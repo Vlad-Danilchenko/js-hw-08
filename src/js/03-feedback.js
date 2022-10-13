@@ -35,8 +35,8 @@ const handleSubmit = event => {
   const {
     elements: { email, message },
   } = event.currentTarget;
-  console.log(email.value);
-  console.log(message.value);
+  // console.log(email.value);
+  // console.log(message.value);
   console.log({ email: email.value, message: message.value });
   event.currentTarget.reset();
   remove(LOCALE_STORAGE_KEY);
